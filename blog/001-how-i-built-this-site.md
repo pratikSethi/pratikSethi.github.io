@@ -4,12 +4,12 @@ description: "Step-by-step guide to setting up a personal blog with GitHub Pages
 date: 2025-01-04
 lastUpdated: 2025-01-04
 tags: ["github-pages", "cloudflare", "dns", "ssl", "web-hosting"]
-draft: false
+draft: true
 ---
 
 # How I Built This Site: GitHub Pages + Cloudflare Custom Domain
 
-*My first blog post - documenting the journey from zero to a live personal site.*
+*My second blog post - documenting the journey from zero to a live personal site.*
 
 So I finally did it. After years of thinking "I should really have a personal site," I bought a domain and set it up. Here's exactly how I did it, including the gotchas I ran into along the way.
 
