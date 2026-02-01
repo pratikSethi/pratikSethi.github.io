@@ -1,0 +1,43 @@
+{{- define "main" }}
+
+<header class="profile-header" style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2.5rem; padding: 1rem 0;">
+  <img src="/images/avatar.jpg" alt="Pratik Sethi" style="width: 120px; height: 120px; border-radius: 50%; flex-shrink: 0;">
+  <div>
+    <h1 style="margin: 0 0 0.25rem 0; font-size: 2rem;">{{ site.Title }}</h1>
+    <p style="color: var(--secondary); margin: 0 0 0.75rem 0;">{{ site.Params.description }}</p>
+    {{- with site.Params.socialIcons }}
+    {{- partial "social_icons.html" (dict) }}
+    {{- end }}
+  </div>
+</header>
+
+<section>
+  <h2 style="text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.1em; color: var(--secondary); margin-bottom: 1.5rem;">Recent Posts</h2>
+
+  {{- $pages := where site.RegularPages "Type" "posts" }}
+  {{- $paginator := .Paginate $pages }}
+
+  {{- range $index, $page := $paginator.Pages }}
+  <article style="margin-bottom: 2rem;">
+    <time style="color: var(--secondary); font-size: 0.85rem;">{{ $page.Date.Format "Jan 2, 2006" }}</time>
+    <h3 style="margin: 0.25rem 0 0.5rem 0; font-weight: normal;">
+      <a href="{{ $page.Permalink }}" style="color: var(--primary);">{{ $page.Title }}</a>
+    </h3>
+    <p style="color: var(--secondary); margin: 0 0 0.5rem 0;">{{ $page.Summary | plainify | htmlUnescape | truncate 200 }}</p>
+    <a href="{{ $page.Permalink }}" style="color: var(--content); font-size: 0.9rem;">Read More...</a>
+  </article>
+  {{- end }}
+
+  {{- if gt $paginator.TotalPages 1 }}
+  <nav class="pagination" style="margin-top: 2rem;">
+    {{- if $paginator.HasPrev }}
+    <a href="{{ $paginator.Prev.URL | absURL }}">« Previous</a>
+    {{- end }}
+    {{- if $paginator.HasNext }}
+    <a href="{{ $paginator.Next.URL | absURL }}">Next »</a>
+    {{- end }}
+  </nav>
+  {{- end }}
+</section>
+
+{{- end }}

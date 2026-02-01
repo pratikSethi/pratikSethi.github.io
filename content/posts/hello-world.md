@@ -1,11 +1,10 @@
 ---
 title: "Starting Over, One Post at a Time"
-description: "On starting a blog, the pursuit of consistency over motivation, and why I'm finally putting my thoughts out there"
 date: 2026-01-31
 lastUpdated: 2026-01-31
 tags: ["personal", "writing", "blogging", "consistency"]
 draft: false
-slug: "hello-world"
+slug: "Starting Over, One Post at a Time"
 ---
 
 I have been thinking of starting my own portfolio or blog for a long time. The idea has been sitting in the back of my mind, occasionally surfacing, then getting pushed aside by the usual excuses. But here I am, finally doing it.

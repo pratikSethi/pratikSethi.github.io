@@ -1,7 +1,7 @@
 baseURL = "https://pratiksethi.dev/"
 languageCode = "en-us"
 title = "Pratik Sethi"
-theme = "hugo-coder"
+theme = "PaperMod"
 
 # URL structure: /posts/<slug>/
 [permalinks]
@@ -10,40 +10,49 @@ theme = "hugo-coder"
 # Disable taxonomies (no tags)
 [taxonomies]
 
-# Theme-specific parameters
+# PaperMod theme parameters
 [params]
   author = "Pratik Sethi"
   description = "Software engineer sharing learnings and thoughts"
-  info = "Software Engineer"
   
   # Avatar image
-  avatarURL = "images/avatar.jpg"
+  images = ["/images/avatar.jpg"]
   
-  # Enable color scheme toggle
-  colorScheme = "auto"
-  hideColorSchemeToggle = false
-
-# Social links (update URLs with your actual profiles)
-[[params.social]]
-  name = "GitHub"
-  icon = "fa-brands fa-github fa-2x"
-  weight = 1
-  url = "https://github.com/pratiksethi"
-
-[[params.social]]
-  name = "LinkedIn"
-  icon = "fa-brands fa-linkedin fa-2x"
-  weight = 2
-  url = "https://linkedin.com/in/pratik-sethi"
-
-[[params.social]]
-  name = "X"
-  icon = "fa-brands fa-x-twitter fa-2x"
-  weight = 3
-  url = "https://x.com/sethi_pratik"
+  # Show recent posts on homepage
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  
+  # Homepage mode - profile with recent posts
+  [params.homeInfoParams]
+    Title = "Pratik Sethi"
+    Content = "Software Engineer"
+  
+  # Using custom homepage layout instead of profileMode
+  [params.profileMode]
+    enabled = false
+  
+  # Social icons
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/pratiksethi"
+  
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/pratik-sethi"
+  
+  [[params.socialIcons]]
+    name = "x"
+    url = "https://x.com/sethi_pratik"
 
 # Navigation menu
 [[menu.main]]
   name = "Posts"
   url = "/posts/"
   weight = 1
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 2
