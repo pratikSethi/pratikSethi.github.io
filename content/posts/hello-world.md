@@ -1,13 +1,12 @@
 ---
-title: "Hello World: Why This Blog Exists"
+title: "Starting Over, One Post at a Time"
 description: "On starting a blog, the pursuit of consistency over motivation, and why I'm finally putting my thoughts out there"
 date: 2026-01-31
 lastUpdated: 2026-01-31
 tags: ["personal", "writing", "blogging", "consistency"]
 draft: false
+slug: "hello-world"
 ---
-
-# Hello World 2.0!
 
 I have been thinking of starting my own portfolio or blog for a long time. The idea has been sitting in the back of my mind, occasionally surfacing, then getting pushed aside by the usual excuses. But here I am, finally doing it.
 
@@ -25,7 +24,7 @@ But there was always this urge to just share. To put something out there. If not
 
 I also want to force myself to be consistent. I have come to believe that consistency beats motivation every time. Motivation can give you a sudden boost to do something, but the real challenge is showing up day after day. With this blog, I am trying to form a habit of building stuff, publishing my work, and hoping it will help me stay focused.
 
-This is not my first attempt, by the way. I had previously started on a similar adventure where I published a few posts on my old site at [naiveroot.wordpress.com](https://naiveroot.wordpress.com/). I wrote a few blog posts but then abandoned it. I hope this time I can go beyond the initial enthusiasm and actually remain consistent.
+This is not my first attempt, by the way. I had previously started on a similar adventure where I published a few blog posts on my [old wordpress site](https://naiveroot.wordpress.com/), but later abandoned it. I hope this time I can go beyond the initial enthusiasm and actually remain consistent.
 
 ## The push I needed
 
@@ -39,7 +38,7 @@ I plan on publishing regularly. I have not decided on a specific cadence yet, bu
 
 I want the content to be my own words and thoughts. I might use an LLM to catch glaring grammatical mistakes, but the voice and ideas will be mine.
 
-On that note, I really resonate with something Simon Willison said:
+On that note, I really resonate with something [Simon Willison said](https://writethatblog.substack.com/p/simon-willison-on-technical-blogging):
 
 > I don't like letting LLMs write for me, but I also have 20+ years of writing experience to lean on. I still use them to assist my writing: as a thesaurus, as a proofreader and occasionally to check that the argument I'm making does not have any embarrassing holes. Sophisticated readers can sniff out LLM-generated text, which inevitably hurts your credibility with them. I value my credibility above all else, so I will avoid anything that is likely to hurt that.
 

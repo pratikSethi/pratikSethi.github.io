@@ -1,0 +1,49 @@
+baseURL = "https://pratiksethi.dev/"
+languageCode = "en-us"
+title = "Pratik Sethi"
+theme = "hugo-coder"
+
+# URL structure: /posts/<slug>/
+[permalinks]
+  posts = "/posts/:slug/"
+
+# Disable taxonomies (no tags)
+[taxonomies]
+
+# Theme-specific parameters
+[params]
+  author = "Pratik Sethi"
+  description = "Software engineer sharing learnings and thoughts"
+  info = "Software Engineer"
+  
+  # Avatar image
+  avatarURL = "images/avatar.jpg"
+  
+  # Enable color scheme toggle
+  colorScheme = "auto"
+  hideColorSchemeToggle = false
+
+# Social links (update URLs with your actual profiles)
+[[params.social]]
+  name = "GitHub"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/pratiksethi"
+
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa-brands fa-linkedin fa-2x"
+  weight = 2
+  url = "https://linkedin.com/in/pratik-sethi"
+
+[[params.social]]
+  name = "X"
+  icon = "fa-brands fa-x-twitter fa-2x"
+  weight = 3
+  url = "https://x.com/sethi_pratik"
+
+# Navigation menu
+[[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 1
