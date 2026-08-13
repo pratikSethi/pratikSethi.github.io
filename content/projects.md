@@ -13,4 +13,5 @@ A collection of projects and learning repositories I maintain. Each links to its
 - **[Kubernetes Learnings](https://pratiksethi.dev/k8s-learnings/)** — hands-on notes on Kubernetes.
 - **[System Design Learnings](https://pratiksethi.dev/system-design-learnings/)** — walkthroughs of system design concepts and projects.
 - **[MemoScribe](https://pratiksethi.dev/memoscribe/)** — a note-taking / transcription project.
+- **[Temporal Learnings](https://pratiksethi.dev/temporal-learnings/)** — learning Temporal durable execution by building a trip-booking saga.
 
